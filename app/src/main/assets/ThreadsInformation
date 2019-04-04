@@ -1,0 +1,27 @@
+How to perform two tasks by two threads?
+How to perform multithreading by anonymous class?
+What is the Thread Scheduler and what is the difference between preemptive scheduling and time slicing?
+What happens if we start a thread twice?
+- No.If you does so, an IllegalThreadStateException is thrown on second start.
+
+What happens if we call the run() method instead of start() method?
+- Each thread starts in a separate call stack.Invoking the run() method, the run() method goes onto
+the current call stack rather than at the beginning of a new call stack.this run method executes
+after finishing first threads run method.
+
+What is the purpose of join method?
+Why JVM terminates the daemon thread if no user threads are remaining?
+What is the shutdown hook?
+What is garbage collection?
+What is the purpose of finalize() method?
+What does the gc() method?
+What is synchronization and why use synchronization?
+What is the difference between synchronized method and synchronized block?
+What are the two ways to perform static synchronization?
+What is deadlock and when it can occur?
+What is interthread-communication or cooperation?
+
+preemptive scheduling:  the highest priority task executes until it enters the waiting or dead states or a higher priority task comes into existence
+time slicing: a task executes for a predefined slice of time
+
+
