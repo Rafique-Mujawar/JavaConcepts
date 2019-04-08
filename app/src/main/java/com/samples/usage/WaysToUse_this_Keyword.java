@@ -66,7 +66,7 @@ class SampleData {
 
     /*argument variable names are same as member variable names,In this case JVM gives priority to
     local variables over member variables*/
-    sampleValue = sampleValue;
+    this.sampleValue = sampleValue;
   }
 
   public void actualInit(String sampleValue) {

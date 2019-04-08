@@ -1,7 +1,7 @@
 package com.samples.usage;
 
 /**
- * One object depneds on other object to use functionality of other object.this dependancy is
+ * One object depends on other object to use functionality of other object.this dependency is
  * called association.
  * Composition:We refer association between two objects as Composition,
  * when one class owns other class and other class can not meaningfully exist, when it's owner destroyed,

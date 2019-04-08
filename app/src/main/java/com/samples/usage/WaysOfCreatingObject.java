@@ -89,7 +89,7 @@ public class WaysOfCreatingObject {
       ObjectInputStream in = new ObjectInputStream(new FileInputStream("data.obj"));
       Student student5 = (Student) in.readObject();
       in.close();
-      System.out.println("Student 5: " + student5.getName() + " " + student5.getRollNo());
+      System.out.println("student 5: " + student5.getName() + " " + student5.getRollNo());
     } catch (IOException e) {
       System.out.println("main5: IOException:" + e);
       e.printStackTrace();

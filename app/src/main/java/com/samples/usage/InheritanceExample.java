@@ -1,7 +1,7 @@
 package com.samples.usage;
 
 /**
- * This class breifs about inheritance in java
+ * This class briefs about inheritance in java
  * Mechanism in which one object acquires all the properties and behaviors of parent object.
  * Reuse methods and fields of parent class i.e. For Code Re usability
  * Represents the IS-A relationship
@@ -9,7 +9,7 @@ package com.samples.usage;
  * 3 Types:  1)single, 2)multilevel and 3)hierarchical
  * Every class is implicitly a subclass of Object.
  * Multiple inheritance is not supported in java through class, To reduce the complexity and simplify.
- * but supported through interfaces.
+ * but supported through interfaces (diamond of death).
  * A subclass inherits all the members (fields, methods, and nested classes) from its superclass.
  * Constructors are not members, so they are not inherited by subclasses,
  * but the constructor of the superclass can be invoked from the subclass.
@@ -40,7 +40,10 @@ class Parent {
 
 /**
  * What You Can Do in a Subclass
- * A subclass inherits all of the public and protected members of its parent, no matter what package the subclass is in. If the subclass is in the same package as its parent, it also inherits the package-private members of the parent. You can use the inherited members as is, replace them, hide them, or supplement them with new members:
+ * A subclass inherits all of the public and protected members of its parent,
+ * no matter what package the subclass is in. If the subclass is in the same package as its parent,
+ * it also inherits the package-private members of the parent. You can use the inherited members
+ * as is, replace them, hide them, or supplement them with new members:
  * <p>
  * The inherited fields can be used directly, just like any other fields.
  * You can declare a field in the subclass with the same name as the one in the superclass, thus hiding it (not recommended).

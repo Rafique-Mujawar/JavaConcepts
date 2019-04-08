@@ -17,7 +17,7 @@ public class EnumExamples {
       System.out.printf("Your weight on %s is %f%n",
           p, p.surfaceWeight(mass));
 
-      System.out.println("Planet:"+p+" mass:"+p.mass()+" radius:"+p.radius());
+      System.out.println("Planet:" + p + " mass:" + p.mass() + " radius:" + p.radius());
     }
   }
 }
