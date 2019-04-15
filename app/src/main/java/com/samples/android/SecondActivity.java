@@ -1,31 +1,20 @@
 package com.samples.android;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.View;
 
 import com.samples.R;
 
-/**
- * @author Rafique Mujawar
- * Date 19-07-2018
- */
-public class FirstActivity extends AppCompatActivity {
-  private static final String TAG = FirstActivity.class.getName();
+public class SecondActivity extends AppCompatActivity {
+
+  private static final String TAG = SecondActivity.class.getName();
 
   @Override
-  protected void onCreate(@Nullable Bundle savedInstanceState) {
+  protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_first);
-    findViewById(R.id.tv_sample).setOnClickListener(new View.OnClickListener() {
-      @Override
-      public void onClick(View v) {
-        startActivity(new Intent(FirstActivity.this, SecondActivity.class));
-      }
-    });
+    setContentView(R.layout.activity_second);
+
     Log.i(TAG, "onCreate: ");
   }
 
